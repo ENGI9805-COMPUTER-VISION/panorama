@@ -1,5 +1,5 @@
 images = cell(1, 2);
-object = 'ledge';
+object = 'pier'; % options are hill, ledge, pier, uttower
 images{1} = imread(['img/', object, '/left.jpg']);
 images{2} = imread(['img/', object, '/right.jpg']);
 

@@ -8,18 +8,17 @@ MATLAB code for panorama image stitching.
 
 ## Stitch_images
 
-Given a set of images with overlapping regions,
+Given a pair of images with overlapping regions,
 automatically compute a panorama image.
 
 ## Prerequisite
 
-- Download and extract the latest VLFeat binary distribution in a directory of your choice (e.g. ~/src/vlfeat). 
-- Let VLFEATROOT denote this directory. 
+- Download(https://www.vlfeat.org/download.html) and extract the latest VLFeat binary distribution in a directory of your choice (e.g. ~/src/vlfeat). 
+- Change VLFEATROOT to your directory for next command. 
 - To permanently add VLFeat to your MATLAB environment, add this line to your startup.m file:
-run('VLFEATROOT/toolbox/vl_setup')
-- Now u can restart MATLAB and run commands of VLFEAT library
-
-VLFeat        - download at http://www.vlfeat.org/download.html
+`run('VLFEATROOT/toolbox/vl_setup')`
+See startup.m file(https://www.mathworks.com/help/matlab/ref/startup.html) for details.
+- Now you can restart MATLAB and run commands of VLFEAT library.
 
 ## Usage    
 
