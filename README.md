@@ -22,12 +22,16 @@ automatically compute a panorama image.
 See [VLFeat in MATLAB](https://www.vlfeat.org/install-matlab.html) for details.
 ## Usage    
 
-run main.m
+Run main.m
+
+Change object variable to one of the options below to generate panorama for different objects:
+
+hill, ledge, pier, uttower
 
 ## stitch_images description
 
-[result_img, H, num_inliers, residual] ...
-              = stitch_images (images, sift_r, harris_r, ...
+[result_img, H, num_inliers, residual] 
+              = stitch_images (images, sift_r, harris_r,
               harris_thresh, harris_sigma, num_putative_matches, ransac_n)
 
 Arguments:
