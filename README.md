@@ -3,7 +3,10 @@ Image-Stitching
 
 MATLAB code for panorama image stitching.
 
-## STITCH_IMAGES
+![img](https://github.com/ENGI9805-COMPUTER-VISION/panorama/blob/master/result/hill.jpg)  
+![img](https://github.com/ENGI9805-COMPUTER-VISION/panorama/blob/master/result/uttower.jpg)  
+
+## Stitch_images
 
 Given a set of images with overlapping regions,
 automatically compute a panorama image.
