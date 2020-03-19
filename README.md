@@ -13,13 +13,13 @@ automatically compute a panorama image.
 
 ## Prerequisite
 
-- Download(https://www.vlfeat.org/download.html) and extract the latest VLFeat binary distribution in a directory of your choice (e.g. ~/src/vlfeat). 
+- [Download](https://www.vlfeat.org/download.html) and extract the latest VLFeat binary distribution in a directory of your choice (e.g. ~/src/vlfeat). 
 - Change VLFEATROOT to your directory for next command. 
-- To permanently add VLFeat to your MATLAB environment, add this line to your startup.m file:
+- To permanently add VLFeat to your MATLAB environment, add this line to your [startup.m file](https://www.mathworks.com/help/matlab/ref/startup.html):
 `run('VLFEATROOT/toolbox/vl_setup')`
-See startup.m file(https://www.mathworks.com/help/matlab/ref/startup.html) for details.
 - Now you can restart MATLAB and run commands of VLFEAT library.
 
+See [VLFeat in MATLAB](https://www.vlfeat.org/install-matlab.html) for details.
 ## Usage    
 
 run main.m
