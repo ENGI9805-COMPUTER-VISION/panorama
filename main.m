@@ -1,6 +1,8 @@
-% Dependencies:
-%           VLFeat        - Download at http://www.vlfeat.org/download.html
+% Add VLFeat Toolbox to the path
+addpath('./vlfeat/toolbox/');
+vl_setup();
 
+images = cell(1, 2);
 object = 'uttower'; % options are hill, ledge, pier, uttower
 image1 = imread(['img/', object, '/left.jpg']);
 image2 = imread(['img/', object, '/right.jpg']);
