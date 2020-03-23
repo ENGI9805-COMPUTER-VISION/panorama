@@ -1,4 +1,4 @@
-function [f, d] = vl_sift_wrapper(I, circles)
+function [f, d] = sift(I, circles)
     fc = circles';
     [h, w] = size(fc);
     fc = cat(1, fc, zeros(1, w));

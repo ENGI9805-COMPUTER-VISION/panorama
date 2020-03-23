@@ -1,13 +1,10 @@
-% RANSAC - A simple RANSAC implementation.
-% Author: Daeyun Shin
-% March 2014
-
 function [result, best_num_inliers, residual] = ransac(XY, XY_, N, estimate_func, transform_func)
+% RANSAC - A simple RANSAC implementation.
     best_H = [];
     best_num_inliers = 0;
 
     for i = 1:N
-        ind = randperm(size(XY,1));
+        ind = randperm(size(XY,1)); % Random permutation
         ind_s = ind(1:4);
         ind_r = ind(5:end);
 

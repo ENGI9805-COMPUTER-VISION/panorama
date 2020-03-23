@@ -1,5 +1,5 @@
 function [XY_] = homography_transform(XY, H)
-    Xi = cat(1, XY', ones(1, size(XY, 1)));
+    Xi = cat(1, XY', ones(1, size(XY, 1))); % Concatenate arrays.
     lambdaXi_ = H*Xi;
     lambdaXi_ = lambdaXi_';
     XY_ = lambdaXi_(:,1:2);

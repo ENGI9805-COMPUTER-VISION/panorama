@@ -15,7 +15,7 @@ function H = fit_homography(XY, XY_)
         A = cat(1, A, cat(2, Xi', zs', -xi_*Xi'));
     end
 
-    [U, S, V] = svd(A);
+    [U, S, V] = svd(A); % Singular value decomposition.
     H = V(:,end);
 
     H = reshape(H, [3 3])';    

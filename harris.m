@@ -1,3 +1,4 @@
+function [cim, r, c] = harris(im, sigma, thresh, radius, disp)
 % HARRIS - Harris corner detector
 %
 % Usage:  [cim, r, c] = harris(im, sigma, thresh, radius, disp)
@@ -22,21 +23,6 @@
 % If thresh and radius are omitted from the argument list 'cim' is returned
 % as a raw corner strength image and r and c are returned empty.
 
-% Reference: 
-% C.G. Harris and M.J. Stephens. "A combined corner and edge detector", 
-% Proceedings Fourth Alvey Vision Conference, Manchester.
-% pp 147-151, 1988.
-%
-% Author: 
-% Peter Kovesi   
-% Department of Computer Science & Software Engineering
-% The University of Western Australia
-% pk@cs.uwa.edu.au  www.cs.uwa.edu.au/~pk
-%
-% March 2002
-
-function [cim, r, c] = harris(im, sigma, thresh, radius, disp)
-    
     error(nargchk(2,5,nargin));
     
     dx = [-1 0 1; -1 0 1; -1 0 1]; % Derivative masks
