@@ -1,3 +1,7 @@
+% Add VLFeat Toolbox to the path
+addpath('./vlfeat/toolbox/');
+vl_setup();
+
 images = cell(1, 2);
 object = 'pier'; % options are hill, ledge, pier, uttower
 images{1} = imread(['img/', object, '/left.jpg']);
