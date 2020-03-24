@@ -1,4 +1,15 @@
 function H = fit_homography(XY, XY_)
+% FIT_HOMOGRAPHY - Computing the homography H.
+%
+% Usage:    H = fit_homography(XY, XY_)
+%
+% Arguments:
+%           XY            - 4 points in image 1.
+%           XY_           - 4 points in image 2.
+%
+% Returns:
+%           H             - The homography H.
+
     [h, w] = size(XY);
     [h_, w_] = size(XY_);
     assert(h == h_);

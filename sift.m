@@ -3,9 +3,6 @@ function [f, d] = sift(I, keypoint)
 %
 % Usage:    [f, d] = sift(I, keypoint)
 %
-% Usage example:
-%           stitch_images(images, 5, 5, 0.03, 1, 100, 4000)
-%
 % Arguments:
 %           I             - I is a gray-scale image in single precision.
 %           keypoint      - Interesting points of the image.
