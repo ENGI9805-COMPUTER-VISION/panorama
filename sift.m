@@ -1,5 +1,21 @@
-function [f, d] = sift(I, circles)
-    fc = circles';
+function [f, d] = sift(I, keypoint)
+% SIFT - Scale-Invariant Feature Transform.
+%
+% Usage:    [f, d] = sift(I, keypoint)
+%
+% Usage example:
+%           stitch_images(images, 5, 5, 0.03, 1, 100, 4000)
+%
+% Arguments:
+%           I             - I is a gray-scale image in single precision.
+%           keypoint      - Interesting points of the image.
+%
+% Returns:
+%           f             - SIFT frames.
+%           d             - d is the descriptor of the corresponding frame
+%           in f.
+
+    fc = keypoint';
     [h, w] = size(fc);
     fc = cat(1, fc, zeros(1, w));
     
