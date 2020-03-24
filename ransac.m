@@ -1,5 +1,20 @@
 function [result, best_num_inliers, residual] = ransac(XY, XY_, N, estimate_func, transform_func)
 % RANSAC - A simple RANSAC implementation.
+%
+% Usage:    [result, best_num_inliers, residual] = ransac(XY, XY_, ransac_n, @fit_homography, @homography_transform)
+%
+% Arguments:
+%           XY            - A seed group of points in image 1.
+%           XY_           - A seed group of points in image 2.
+%           N             - number of RANSAC iterations.
+%           estimate_func - Function to calculate homography H.
+%           transform_func- Function to transform points from one image to another.
+%
+% Returns:
+%           result        - The best homography H.
+%           best_num_inliers     
+%           residual      
+
     best_H = [];
     best_num_inliers = 0;
 
